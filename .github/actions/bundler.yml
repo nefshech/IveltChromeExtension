@@ -1,0 +1,5 @@
+jobs:
+  bundler:
+      steps:
+        - name: Bundle FE files into a single chunk
+          run: node bundler.js
