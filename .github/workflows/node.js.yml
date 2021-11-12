@@ -1,0 +1,13 @@
+name: Bundler
+
+on: pull_request
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
